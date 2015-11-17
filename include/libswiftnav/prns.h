@@ -14,9 +14,10 @@
 #define LIBSWIFTNAV_PRNS_H
 
 #include "common.h"
+#include "signal.h"
 
-const u8* ca_code(u8 prn);
-s8 get_chip(u8* code, u32 chip_num);
+const u8* ca_code(gnss_signal_t sid);
+s8 get_chip(const u8* code, u32 chip_num);
 
 #endif /* LIBSWIFTNAV_PRNS_H */
 
